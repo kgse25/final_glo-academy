@@ -29,6 +29,24 @@
 	&__text
 		text-decoration: none
 		color: $text-color
+		position: relative
+		transition: 0.2s
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			bottom: -3px
+			left: 0
+			height: 2px
+			width: 100%
+			opacity: 0
+			background-color: $main-color
+			transition: 0.4s		
+		&:hover
+			color: $main-color
+			&:before
+				opacity: 1
+
 
 	&__stick
 		display: inline-block
