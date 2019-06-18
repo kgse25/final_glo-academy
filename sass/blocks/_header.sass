@@ -1,0 +1,55 @@
+.header
+	width: 100%
+	background: linear-gradient(to right, white 55%, $background-color 45%)
+.header-block 
+	display: flex
+	&__nav
+		padding: 8px 0 
+		display: flex
+		align-items: center
+		flex-basis: 57%
+	&__contacts
+		flex-basis: 43%
+.navigation
+	display: flex
+	&__block
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__logo
+		text-transform: uppercase
+		font-size: 15px
+		+boldIt
+	&__list
+		margin-left: 135px
+		list-style: none
+		padding: 0
+	&__item
+		display: inline
+	&__text
+		text-decoration: none
+		color: $text-color
+
+	&__stick
+		display: inline-block
+		width: 1px
+		height: 12px
+		background-color: $text-color
+		opacity: 0.15
+		margin-right: 10px
+		margin-left: 10px
+.contacts
+	display: flex
+	align-items: center
+	&__block
+		display: flex
+		align-items: center
+	&__img
+		margin-left: 50px
+	&__tel
+		text-decoration: none
+		color: $text-color
+		margin-left: 6px
+		margin-right: 43px
+	
+

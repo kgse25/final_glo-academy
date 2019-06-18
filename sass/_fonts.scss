@@ -1,0 +1,29 @@
+@font-face {
+font-family: 'Proxima Nova Regular';
+src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+src: url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Bold Italic';
+	src: url('../fonts/ProximaNova/ProximaNova-BoldIt.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin boldIt {
+	font-family: 'Proxima Nova Bold Italic';
+	font-weight: 400
+}
+
+@mixin regular {
+	font-family: 'Proxima Nova Regular';
+	font-weight: 400;
+}
