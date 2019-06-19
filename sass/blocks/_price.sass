@@ -1,0 +1,66 @@
+.price
+	&-column
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&__item
+			position: relative
+			width: 377px
+			height: 236px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			margin-bottom: 35px
+			&:nth-child(n+4)
+				margin-bottom: 0
+		&__img
+			position: absolute
+			top: 0
+			left: 0
+		&__text, &__btn
+			position: relative
+		&__btn
+			font-size: 15px
+			line-height: 15.93px
+			text-transform: uppercase
+			margin: auto
+			display: block
+			margin-bottom: 68px
+			transition: all 0.5s
+			
+		&__text
+			max-width: 300px
+			margin-top: 60px
+			display: block
+			font-size: 20px
+			line-height: 26px
+			color: white
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+
+@media (max-width: 1200px)
+	.price
+		&-column
+			&__item
+				margin-right: 35px
+				margin-left: 35px
+
+@media (max-width: 992px)
+	.price
+		&-column
+			&__item
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 30px
+				&:nth-child(n+4)
+					margin-bottom: 30px
+
+@media (max-width: 576px)
+	.price
+		&-column
+			&__item
+				flex-basis: 100%
+				margin-bottom: -20px	
+				&:nth-child(n+4)
+					margin-bottom: -20px

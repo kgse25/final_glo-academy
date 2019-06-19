@@ -4,6 +4,7 @@ body
 .container
 	max-width: 1170px
 	margin: auto
+	position: relative
 .button
 	width: 138px
 	height: 33px
@@ -19,6 +20,25 @@ body
 img
 	max-width: 100%
 
+.section
+	background-color: $background-color
+	width: 100%
+	padding: 100px 0 70px 0
+.article
+	position: absolute
+	top: -125px
+	left: -25px
+	width: 244px
+	background-color: $main-color
+	+semiBold
+	font-size: 28px
+	line-height: 28px
+	text-transform: uppercase
+	padding: 20px 5px
+	text-align: center
+
+
+
 
 @media (max-width: 1200px)
 	.container
@@ -33,10 +53,17 @@ img
 		background: url(../img/hero/dot.jpg)
 		&:hover
 			background: url(../img/hero/dot.jpg)
-		
-			
+	.section
+		padding: 50px 0 30px 0
+	.article
+		padding: 15px 5px
+		width: 190px
+		top: -80px
+		font-size: 25px
+		left: -25px
+    
 
-	
+			
 @media (max-width: 767px)
 	.container
 		max-width: 500px	
