@@ -18,6 +18,16 @@ font-style: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Semibold';
+	src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @mixin boldIt {
 	font-family: 'Proxima Nova Bold Italic';
 	font-weight: 400
@@ -25,5 +35,10 @@ font-style: normal;
 
 @mixin regular {
 	font-family: 'Proxima Nova Regular';
+	font-weight: 400;
+}
+
+@mixin semiBold {
+	font-family: 'Proxima Nova Semibold';
 	font-weight: 400;
 }
