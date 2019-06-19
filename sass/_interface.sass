@@ -16,8 +16,10 @@ body
 		cursor: pointer
 		background-color: lighten($main-color, 20%)
 		transition: 0.3s
-	img
-		max-width: 100%
+img
+	max-width: 100%
+
+
 @media (max-width: 1200px)
 	.container
 		max-width: 900px
@@ -27,6 +29,14 @@ body
 	.button
 		&:hover
 			background-color: $main-color
+	.slick-dots li button
+		background: url(../img/hero/dot.jpg)
+		&:hover
+			background: url(../img/hero/dot.jpg)
+		
+			
+
+	
 @media (max-width: 767px)
 	.container
 		max-width: 500px	

@@ -1,6 +1,4 @@
-
 .slick-dots
-	position: absolute
 	bottom: 45px
 .slick-dots li button
 	background: url(../img/hero/dot.jpg)
@@ -13,19 +11,21 @@
 .slider
 	max-height: 742px
 	&__img
-		max-height: 742px
+		position: absolute
+		height: 100%
 		width: 100%
+	&__text
+		height: inherit
+		position: inherit
+
 .hero
 	&-section
 		width: 100%
-		position: relative
 		max-height: 742px
-		&__text
-			position: absolute
-			top: 0
-			left: 175px
 	&__title
-		margin-top: 211px
+		display: block
+		padding-top: 175px
+		margin-top: 0
 		margin-bottom: 0
 		+semiBold
 		font-size: 35px
@@ -33,11 +33,13 @@
 		text-transform: uppercase
 		color: $main-color
 	&__subtitle
+		display: block
 		margin-top: 0
 		line-height: 55px
 		font-size: 35px
 		color: white
 	&__description
+		display: block
 		line-height: 28px
 		font-weight: 300
 		font-size: 20px
@@ -45,6 +47,7 @@
 		color: white
 	&__button
 		margin-top: 50px
+		margin-bottom: 150px	
 		width: 185px
 		height: 44px
 		line-height: 40px
@@ -53,6 +56,98 @@
 		text-transform: uppercase
 		+semiBold
 			
+@media (max-width: 1200px)
+	.hero
+		&__title
+			margin-bottom: 20px
+			padding-top: 140px
+			font-size: 30px
+			line-height: 35px
+		&__subtitle
+			font-size: 30px
+			line-height: 35px
+		&__description
+			font-size: 17px
+			line-height: 17px
+		&__button
+			font-size: 13px
+			width: 155px
+			height: 37px
+			line-height: 36px
+	.slick-dots li
+		margin: 0 20px
+		& button
+			width: 25px
+			height: 25px
+	
+
+@media (max-width: 992px)
+	.hero
+		&__title
+			padding-top: 0
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
+			width: 500px
+			text-align: center
+			padding-top: 125px
+			font-size: 25px
+		&__subtitle
+			padding-bottom: 20px
+			margin: auto
+			width: 500px
+			text-align: center
+			font-size: 25px
+		&__description
+			margin: auto
+			width: 500px
+			text-align: center
+		&__button
+			font-size: 13px
+			width: 155px
+			height: 37px
+			line-height: 36px
+			margin-top: 35px
+			margin-bottom: 150px
+			margin-left: auto
+			margin-right: auto
+	.slick-dots li
+		margin: 0 25px
+		& button
+			width: 30px
+			height: 30px
+		
+@media (max-width: 767px)
+	.hero
+		&__title
+			padding-top: 100px
+			font-size: 20px
+		&__subtitle
+			padding-bottom: 40px
+			font-size: 20px
+		&__button
+			width: 138px
+			height: 33px
+			line-height: 26px
+	.slick-dots li
+		margin: 0 40px
+		& button
+			width: 35px
+			height: 35px
+
+@media (max-width: 576px)
+	.hero
+		&__title
+			width: 100%
+		&__subtitle
+			width: 100%
+		&__description
+			width: 100%
+
+
+			
+
+
 		
 
 
