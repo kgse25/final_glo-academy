@@ -28,6 +28,20 @@ font-style: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Black';
+	src: url('../fonts/ProximaNova/ProximaNova-Black.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin black {
+	font-family: 'Proxima Nova Black';
+	font-weight: 400
+}
 @mixin boldIt {
 	font-family: 'Proxima Nova Bold Italic';
 	font-weight: 400
