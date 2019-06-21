@@ -38,6 +38,21 @@ font-style: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/ProximaNova/PProximaNova-Light.eot');
+	src: url('../fonts/ProximaNova/PProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/PProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova/PProximaNova-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin light {
+	font-family: 'Proxima Nova Light';
+	font-weight: 300
+}
+
 @mixin black {
 	font-family: 'Proxima Nova Black';
 	font-weight: 400
