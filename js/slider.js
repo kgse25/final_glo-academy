@@ -7,4 +7,11 @@ $(document).ready(function(){
 		fade: true,
 		cssEase: 'linear',
 	});
+	$('.multiple-slider').slick({
+		infinite: true,
+		arrows: false,
+		dots: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+	});
 })

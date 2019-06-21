@@ -1,0 +1,67 @@
+.feedback
+	background-color: black
+
+.multiple-slider
+	.slick-dots
+		bottom: -55px
+	&__item
+		display: flex
+		flex-direction: column
+		text-align: center
+		align-items: center
+		justify-content: space-between
+	&__img
+		margin-left: auto
+		margin-right: auto
+	&__name , &__text
+		display: block
+	&__text
+		max-width: 465px	
+		margin: auto
+		font-size: 20px
+		line-height: 28px
+		color: white
+	&__name
+		margin-bottom: 25px
+		margin-top: 19px
+		font-size: 20px
+		+semiBold
+		color: $main-color
+		line-height: 28px
+.vote-block
+	padding-top: 25px
+	margin-left: auto
+	margin-right: auto
+	display: flex
+	max-width: 110px
+	justify-content: space-between
+	&__likes, &__dislikes
+		display: flex
+		justify-content: space-between
+	&__img
+		
+.like-block
+	&__img
+		display: block
+		width: 20px
+		height: 20px
+		background: url('../img/feedback/like.png')
+	&__value
+		margin-left: 6px
+		color: white
+		font-size: 15px
+		line-height: 28px
+
+
+.dislike-block
+	&__img
+		display: block
+		width: 20px
+		height: 20px
+		background: url('../img/feedback/dislike.png')
+	&__value
+		margin-left: 6px
+		color: white
+		font-size: 15px
+		line-height: 28px
+		
