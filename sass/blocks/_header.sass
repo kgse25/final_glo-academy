@@ -1,6 +1,6 @@
 .header
 	width: 100%
-	background: linear-gradient(to right, white 59%, $background-color 41%)
+	background: linear-gradient(to right, $bg-light 59%, $background-color 41%)
 .header-block 
 	display: flex
 	&__nav
@@ -30,7 +30,7 @@
 		display: inline
 	&__text
 		text-decoration: none
-		color: $text-color
+		color: $text-color-dark
 		position: relative
 		transition: 0.2s
 		&:before
@@ -52,7 +52,7 @@
 		display: inline-block
 		width: 1px
 		height: 12px
-		background-color: $text-color
+		background-color: $text-color-dark
 		opacity: 0.15
 		margin-right: 25px
 		margin-left: 25px
@@ -67,7 +67,7 @@
 		margin-left: 55px
 	&__tel
 		text-decoration: none
-		color: $text-color
+		color: $text-color-dark
 		margin-left: 6px
 		margin-right: 43px
 	&__bold
@@ -139,7 +139,7 @@
 			margin-left: 30px
 		&__text
 			&:hover
-				color: $text-color
+				color: $text-color-dark
 				&:before
 					opacity: 0
 		&__stick

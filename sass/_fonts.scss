@@ -48,6 +48,36 @@ font-style: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Extra Bold';
+	src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Italic';
+	src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot');
+	src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin regularIt {
+	font-family: 'Proxima Nova Italic';
+	font-weight: 400
+}
+
+@mixin extraBold {
+	font-family: 'Proxima Nova Extra Bold';
+	font-weight: 400
+}
+
 @mixin light {
 	font-family: 'Proxima Nova Light';
 	font-weight: 300

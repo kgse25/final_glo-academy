@@ -1,5 +1,5 @@
 .quest
-	background: linear-gradient(to right, $background-color 57%, white 43%)
+	background: linear-gradient(to right, $background-color 57%, $bg-light 43%)
 	&-block
 		height: 374px
 		display: flex
@@ -13,7 +13,7 @@
 			&__item
 				width: 198px
 				height: 168px
-				background-color: white
+				background-color: $bg-light
 				text-align: center
 				margin-bottom: 36px
 				&:nth-child(n+4)
@@ -62,7 +62,7 @@
 			display: inline-block
 			width: 31px
 			height: 2px
-			background-color: #010101
+			background-color: $stick-quest-color
 		&__content
 			flex-basis: 82%
 			font-size: 20px
@@ -71,18 +71,25 @@
 			
 @media (max-width: 1200px)
 	.quest
+		&-block
+			height: inherit
+
 		&-blocks
 			justify-content: space-around
 			&__item
+				margin-bottom: 20px
+				&:nth-child(n+4)
+					margin-bottom: 20px
 				&:nth-child(n+5)
 					margin-bottom: 0
 		&-list
 			&__item
-				margin-bottom: 100px
+				margin-bottom: 65px
 
 @media (max-width: 992px)
 	.quest
-		background: linear-gradient(to bottom, $background-color 60%, white 40%)
+		padding-bottom: 0
+		background: linear-gradient(to bottom, $background-color 55%, white 45%)
 		&-block
 			flex-direction: column
 			&s
@@ -109,10 +116,19 @@
 
 @media (max-width: 576px)
 	.quest
-		background: linear-gradient(to bottom, $background-color 80%, white 20%)
+		margin-bottom: -50px
+		background: linear-gradient(to bottom, $background-color 77%, white 23%)
 		&-blocks 
+			&__item
+				width: 180px
+				height: 140px
+				&:last-child
+					margin-bottom: 0
+
 			&__text
+				font-size: 14px
 		&-list
+			
 			&__counter
 				font-size: 20px
 				line-height: 20px

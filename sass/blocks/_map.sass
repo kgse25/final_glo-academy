@@ -1,0 +1,67 @@
+.section-map
+	position: relative
+	&__map
+		z-index: -1
+		width: 100%
+		position: absolute
+		top: 0 
+		left: 0
+	&__block
+		text-align: center
+		display: inline-block
+		width: 397px
+		height: 385px
+		background-color: #ffffff
+	&__container
+		align-items: center
+		display: flex
+		height: 666px
+    
+.map
+	&__title
+		margin-left: auto
+		margin-right: auto
+		margin-top: 50px
+		margin-bottom: 30px
+		+extraBold
+		text-transform: uppercase
+		font-size: 20px
+		line-height: 28px
+		&-application
+			color: $main-color
+	&__forms
+	&__button
+		width: 304px
+		height: 58px
+		font-size: 20px
+		line-height: 28px
+		text-transform: uppercase
+	&-form
+		&__name, &__tel
+			padding-bottom: 2px
+			margin-bottom: 35px
+			width: 305px
+			display: inline-block
+			outline: none
+			border: none
+			+regularIt
+			font-size: 18px
+			line-height: 28px
+			border-bottom: 1px solid black
+		&__tel
+			margin-bottom: 60px
+@media (max-width: 1920px)
+	.section-map
+		&__map
+			height: 666px
+@media (max-width: 992px)
+	.section-map
+		&__map
+			position: relative
+		&__block
+			margin: auto
+		&__container
+			height: 400px
+		&__map
+			height: 400px
+

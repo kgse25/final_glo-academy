@@ -1,0 +1,115 @@
+.footer
+	background-color: $bg-dark
+	padding: 50px 0
+
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-address
+		display: flex
+		align-items: center
+		&__address
+			font-size: 20px
+			line-height: 28px
+			color: $text-color-light
+			font-style: normal
+		&__img
+			margin-right: 10px
+	&-social
+		&__img
+			margin-right: 10px
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+	&-contacts
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__tel
+			margin-right: 20px
+		&__mail, &__tel
+			display: flex
+			align-items: center
+		&__email, &__phone
+			text-decoration: none
+			font-size: 18px
+			line-height: 40px
+			color: $text-color-light
+		&__envelope
+			margin-right: 10px
+		&__img
+			margin-right: 10px
+	&__stick
+		width: 1px
+		height: 15px
+		background-color: $bg-light
+		opacity: 0.33
+		margin-left: 20px
+		margin-right: 20px
+
+@media (max-width: 1200px)
+	.footer
+		&__stick
+			margin-left: 10px
+			margin-right: 10px
+		&-contacts
+			&__tel
+				margin-right: 0
+			&__envelope, &__img
+				margin-right: 5px
+		&-social
+			&__img
+				margin-right: 5px
+		&-address
+			&__img
+				margin-right: 5px
+@media (max-width: 992px)
+	.footer
+		&__stick
+			display: none
+		&-contacts
+			flex-direction: column
+			align-items: flex-start
+@media (max-width: 767px)
+	.footer
+		padding: 30px 0	
+		&-address
+			margin-top: 6px
+			flex-basis: 50%
+			order: 0
+		&-contacts
+			align-items: flex-end
+			flex-basis: 50%
+			order: 1
+		&-social
+			margin-left: auto
+			margin-right: auto
+			margin-top: 35px
+			order: 2
+		&-block
+			align-items: flex-start
+			flex-wrap: wrap
+		
+@media (max-width: 576px)
+	.footer
+		padding: 20px 0
+		&-block
+			flex-direction: column
+		&-address, &-contacts, &-social
+			flex-basis: 100%
+			align-items: center
+			margin-bottom: 5px
+		&-contacts
+			align-items: flex-start
+		&-address
+			&__address
+				font-size: 17px
+		&-contacts
+			&__email, &__phone
+				font-size: 17px
+		&-social
+			margin-top: 10px
+
+
+	
