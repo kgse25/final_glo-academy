@@ -6,7 +6,11 @@
 		flex-wrap: wrap
 		&__item
 			flex-basis: 32%
+			&:hover
+				.news-block__text, .title-block__title
+					text-decoration: underline
 		&__text
+			transition: 0.5s
 			font-size: 18px
 			line-height: 28px
 	&__button
@@ -25,6 +29,7 @@
 	justify-content: space-between
 	align-items: center
 	&__title
+		transition: 0.5s
 		margin: 0
 		font-size: 20px
 		font-weight: 700
@@ -49,6 +54,9 @@
 		&-block
 			&__item
 				flex-basis: 45%
+				&:hover
+					.news-block__text, .title-block__title
+						text-decoration: none
 				&:last-child
 					margin: auto
 					padding-top: 20px

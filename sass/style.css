@@ -745,6 +745,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .section {
+    margin: 100px 0;
+  }
   .container {
     max-width: 900px;
   }
@@ -776,6 +779,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  .section {
+    margin: 85px 0;
+  }
   .container {
     max-width: 500px;
   }
@@ -1074,6 +1080,41 @@ img {
   }
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .slider {
   height: 742px;
 }
@@ -1169,7 +1210,100 @@ img {
   }
 }
 
+@media (max-width: 1700px) {
+  .hero-section {
+    height: 705px;
+  }
+  .slider {
+    height: 705px;
+  }
+  .slider__img {
+    height: 705px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .hero-section {
+    height: 665px;
+  }
+  .slider {
+    height: 665px;
+  }
+  .slider__img {
+    height: 665px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .hero-section {
+    height: 625px;
+  }
+  .slider {
+    height: 625px;
+  }
+  .slider__img {
+    height: 625px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-section {
+    height: 585px;
+  }
+  .slider {
+    height: 585px;
+  }
+  .slider__img {
+    height: 585px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero-section {
+    height: 545px;
+  }
+  .slider {
+    height: 545px;
+  }
+  .slider__img {
+    height: 545px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    height: 505px;
+  }
+  .slider {
+    height: 505px;
+  }
+  .slider__img {
+    height: 505px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-section {
+    height: 485px;
+  }
+  .slider {
+    height: 485px;
+  }
+  .slider__img {
+    height: 485px;
+  }
+}
+
 @media (max-width: 992px) {
+  .hero-section {
+    height: 445px;
+  }
+  .slider {
+    height: 445px;
+  }
+  .slider__img {
+    height: 445px;
+  }
   .hero__title {
     padding-top: 0;
     margin-left: auto;
@@ -1177,7 +1311,7 @@ img {
     margin-bottom: 20px;
     width: 500px;
     text-align: center;
-    padding-top: 125px;
+    padding-top: 70px;
     font-size: 25px;
   }
   .hero__subtitle {
@@ -1212,8 +1346,17 @@ img {
 }
 
 @media (max-width: 767px) {
+  .hero-section {
+    height: 405px;
+  }
+  .slider {
+    height: 405px;
+  }
+  .slider__img {
+    height: 405px;
+  }
   .hero__title {
-    padding-top: 100px;
+    padding-top: 10px;
     font-size: 20px;
   }
   .hero__subtitle {
@@ -1235,13 +1378,30 @@ img {
 }
 
 @media (max-width: 576px) {
+  .hero-section {
+    height: 345px;
+  }
+  .slider {
+    height: 345px;
+  }
+  .slider__img {
+    height: 345px;
+  }
   .hero__title {
+    padding-top: 35px;
+    font-size: 15px;
+    line-height: 15px;
     width: 100%;
   }
   .hero__subtitle {
+    font-size: 15px;
+    line-height: 15px;
     width: 100%;
+    padding-bottom: 15px;
   }
   .hero__description {
+    font-size: 12px;
+    line-height: 12px;
     width: 100%;
   }
 }
@@ -1714,7 +1874,13 @@ img {
       flex-basis: 32%;
 }
 
+.news-block__item:hover .news-block__text, .news-block__item:hover .title-block__title {
+  text-decoration: underline;
+}
+
 .news-block__text {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 18px;
   line-height: 28px;
 }
@@ -1745,6 +1911,8 @@ img {
 }
 
 .title-block__title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin: 0;
   font-size: 20px;
   font-weight: 700;
@@ -1777,6 +1945,9 @@ img {
   .news-block__item {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
+  }
+  .news-block__item:hover .news-block__text, .news-block__item:hover .title-block__title {
+    text-decoration: none;
   }
   .news-block__item:last-child {
     margin: auto;
@@ -1826,6 +1997,8 @@ img {
   width: 397px;
   height: 385px;
   background-color: #ffffff;
+  -webkit-box-shadow: 2px -1px 7px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px -1px 7px 1px rgba(0, 0, 0, 0.5);
 }
 
 .section-map__container {
@@ -1892,6 +2065,8 @@ img {
   }
   .section-map__block {
     margin: auto;
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
   }
   .section-map__container {
     height: 400px;
