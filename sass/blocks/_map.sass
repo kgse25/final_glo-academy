@@ -39,19 +39,24 @@
 		line-height: 28px
 		text-transform: uppercase
 	&-form
+		position: relative
 		&__name, &__tel
 			padding-bottom: 2px
 			margin-bottom: 35px
 			width: 305px
-			display: inline-block
+			display: block
+			margin-right: auto
+			margin-left: auto
 			outline: none
 			border: none
 			+regularIt
 			font-size: 18px
 			line-height: 28px
 			border-bottom: 1px solid black
+			
 		&__tel
 			margin-bottom: 60px
+
 @media (max-width: 1920px)
 	.section-map
 		&__map

@@ -5,9 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="sass/style.css">
 	<title>Document</title>
+	<!-- Yandex.Metrika counter --> 
+	<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54203929, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54203929" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-	<header class="header">
+	<header class="header scroll">
 		<div class="container">
 			<div class="header-block">
 				<div class="header-block__nav navigation">
@@ -45,7 +47,8 @@
 						<img src="img/header/phone.png" alt="" class="contacts__img">
 						<a href="tel:+7(863)342-22-21" class="contacts__tel">+7 (863) <strong class="contacts__bold">342-22-21</strong></a>
 					</div>
-					<button id="button" class="button contacts__button">Заказать звонок</button>
+					<button onclick="ym(54203929, 'reachGoal', 'btn_click'); return true;" id="button"
+						class="button contacts__button">Заказать звонок</button>
 				</div>
 				<!-- /.header-block__contact -->
 				<div class="hamburger">
@@ -58,7 +61,7 @@
 	</header>
 	<!-- /.header -->
 
-		<section class="hero-section">
+		<section class="hero-section scroll">
 			<div class="slider hero-section__slider">
 				<div class="slider__item">
 					<img src="img/hero/boiler.jpg" alt=""
@@ -124,7 +127,7 @@
 		</section>
 		<!-- /.hero-section -->
 
-		<section id="offer" class="section price">
+		<section id="offer" class="section price scroll">
 			<div class="container">
 				<div id="price" class="price-block">
 					<div class="price__article article">Услуги</div>
@@ -132,41 +135,61 @@
 					<div class="price-column">
 						<div class="price-column__item">
 							<img src="img/price/img-1.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Монтаж систем <br>
+							<span class="price-column__text text_content1">Монтаж систем <br>
 								отопления</span>
-							<button class="button price-column__btn">узнать цену</button>
+							<span class="text_content2">Здесь будет короткое описание
+								о данной услуге</span>
+							<button data-target="heat" class="button price-column__btn">
+								<span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 500 Р.</span>
+							</button>
 							
 
 						</div>
 						<div class="price-column__item">
 							<img src="img/price/img-2.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Здесь будет короткое описание
+							<span class="price-column__text text_content1">Монтаж сантехнического
+								оборудования</span>
+								<span class="text_content2">Здесь будет короткое описание
 								о данной услуге</span>
-							<button class="button price-column__btn">узнать цену</button>
+							<button data-target="sanitary" class="button price-column__btn"><span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 1000 Р.</span></button>
 						</div>
 						<div class="price-column__item">
 							<img src="img/price/img-3.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Монтаж канализационного
+							<span class="price-column__text text_content1">Монтаж канализационного
 								оборудования</span>
-							<button class="button price-column__btn">узнать цену</button>
+								<span class="text_content2">Здесь будет короткое описание
+								о данной услуге</span>
+							<button data-target="sewerage" class="button price-column__btn"><span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 1500 Р.</span></button>
 						</div>
 						<div class="price-column__item">
 							<img src="img/price/img-1.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Монтаж систем <Br>
+							<span class="price-column__text text_content1">Монтаж систем <Br>
 								отопления</span>
-							<button class="button price-column__btn">узнать цену</button>
+								<span class="text_content2">Здесь будет короткое описание
+								о данной услуге</span>
+							<button data-target="heat" class="button price-column__btn"><span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 500 Р.</span></button>
 						</div>
 						<div class="price-column__item">
 							<img src="img/price/img-2.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Монтаж сантехнического
+							<span class="price-column__text text_content1">Монтаж сантехнического
 								оборудования</span>
-							<button class="button price-column__btn">узнать цену</button>
+								<span class="text_content2">Здесь будет короткое описание
+								о данной услуге</span>
+							<button data-target="sanitary" class="button price-column__btn"><span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 1000 Р.</span></button>
 						</div>
 						<div class="price-column__item">
 							<img src="img/price/img-3.jpg" alt="" class="price-column__img">
-							<span class="price-column__text">Монтаж канализационного
+							<span class="price-column__text text_content1">Монтаж канализационного
 								оборудования</span>
-							<button class="button price-column__btn">узнать цену</button>
+								<span class="text_content2">Здесь будет короткое описание
+								о данной услуге</span>
+							<button data-target="sewerage" class="button price-column__btn"><span class="btn_content1">УЗНАТЬ ЦЕНУ</span>
+								<span class="btn_content2">ОТ 1500 Р.</span></button>
 						</div>
 					</div>
 					<!-- /.price-columns -->
@@ -177,7 +200,7 @@
 		</section>
 		<!-- /.section price -->   
 
-		<section class="section quest">
+		<section class="section quest scroll">
 			<div class="container">
 				<div class="quest-block">
 					<div class="quest-blocks">
@@ -244,7 +267,7 @@
 		</section>
 		<!-- /.section quest -->
 
-		<section id="feedback" class="section feedback">
+		<section id="feedback" class="section feedback scroll">
 			<div class="container">
 				<div class="feedback-block">
 					<div class="article feedback__article">Отзывы</div>
@@ -355,7 +378,7 @@
 			</div>
 		</section>
 
-		<section id="news" class="section news">
+		<section id="news" class="section news scroll">
 			<div class="container">
 				<div class="article news__aticle">новости</div>
 				<div class="news-block">
@@ -394,24 +417,25 @@
 			</div>
 		</section>
 
-		<section class="section-map">
+		<section class="section-map scroll">
 			<div class="container section-map__container">
 				<div class="section-map__block map">
 					<div class="map__title">Оставьте <b class="map__title-application">заявку</b></div>
-					<form action="#" class="map__forms map-form">
-						<input type="text" class="map-form__name" placeholder="Введите Ваше имя">
-						<input type="tel" class="map-form__tel" placeholder="Введите Ваш номер телефона">
+					<form action="mail.php" method="POST" id="form" class="map__forms map-form"
+						onsubmit="ym(54203929, 'reachGoal', 'form_complete'); return true;">
+						<input type="text" name="userName" class="map-form__name" placeholder="Введите Ваше имя">
+						<input type="tel" name="phoneNumber" id="telNumber" class="map-form__tel" placeholder="Введите Ваш номер телефона">
 						<input type="submit" class="button map__button" value="ЗАКАЗАТЬ ЗВОНОК">
 					</form>
 				</div>
 			</div>
-			<div class="section-map__map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A43da537aa34abedd957c69c6a468f275571c16b11f4695f774159f856b8ff6bd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+			<div id="map" class="section-map__map">
+				<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A43da537aa34abedd957c69c6a468f275571c16b11f4695f774159f856b8ff6bd&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script> -->
 			</div>
 			
 		</section>
 
-		<footer id="contacts" class="footer">
+		<footer id="contacts" class="footer scroll">
 			<div class="container">
 				<div class="footer-block">
 					<div class="footer-address">
@@ -442,19 +466,27 @@
 		<!-- Модальное окно -->
 		<div class="modal" id="modal">
 			<div class="modal-dialog">
-				<h4 class="modal-dialog__title">
-					Всплывающее окно
-				</h4>
-				<!-- /.modal-dialog__title -->
 				<button class="modal-dialog__close" id="close">
 					&times;
 				</button>
-				<!-- /.modal-dialog__close -->
+				<div class="modal-column">
+						<div class="section-map__block map modal-form-block">
+							<div class="map__title">Оставьте <b class="map__title-application">заявку</b></div>
+							<form action="mail.php" method="POST" id="modal-form" class="map__forms map-form"
+								onsubmit="ym(54203929, 'reachGoal', 'modal_complete'); return true;">
+								<input onmouseout="this.blur();" type="text" name="userName" class="map-form__name" placeholder="Введите Ваше имя">
+								<input onmouseout="this.blur();" type="tel" name="phoneNumber" id="phoneNumber" class="map-form__tel"
+									placeholder="Введите Ваш номер телефона">
+								<input type="submit" class="button map__button" value="ЗАКАЗАТЬ ЗВОНОК">
+							</form>
+						</div>
+				</div>
 			</div>
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
-
+	<div class="btnScroll btnPrev noselect">&#8593;</div>
+	<div class="btnScroll btnNext noselect">&#8595;</div>
 
 <!-- Подключаем библиотеку jQuery -->
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -468,6 +500,10 @@
 <!-- Валидаторы -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<!-- Скрипт валидации -->
+<script src="js/validate.js"></script>
+<!-- Стрелка и плавный скролл -->
+<script src="js/scroll.js"></script>
 
 </body>
 </html>

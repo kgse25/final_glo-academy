@@ -13,10 +13,16 @@
 			margin-bottom: 20px
 			&:nth-child(n+4)
 				margin-bottom: 0
+			&:hover
+				.text_content1
+					display: none
+				.text_content2
+					display: block
 		&__img
 			position: absolute
 			top: 0
 			left: 0
+			
 		&__text, &__btn
 			position: relative
 		&__btn
@@ -27,7 +33,12 @@
 			display: block
 			margin-bottom: 68px
 			transition: all 0.5s
-			
+			&:hover
+				background-color: $bg-dark
+				.btn_content1
+					display: none
+				.btn_content2
+					display: inline
 		&__text
 			max-width: 300px
 			margin-top: 60px
@@ -38,6 +49,25 @@
 			margin-left: auto
 			margin-right: auto
 			text-align: center
+			transition: 0.2s
+			
+
+.btn_content2
+	color: $text-color-light
+	display: none
+	transition: 0.2s
+.text_content2
+	position: relative
+	max-width: 300px
+	margin-top: 60px
+	font-size: 20px
+	line-height: 26px
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	color: $text-color-dark
+	display: none
+	transition: 0.2s
 
 @media (max-width: 1200px)
 	.price
@@ -55,6 +85,18 @@
 				margin-bottom: 30px
 				&:nth-child(n+4)
 					margin-bottom: 30px
+				&:hover
+					.text_content1
+						display: block
+					.text_content2
+						display: none			
+			&__btn
+				&:hover
+					background-color: $main-color
+					.btn_content1
+						display: inline
+					.btn_content2
+						display: none
 
 @media (max-width: 576px)
 	.price

@@ -49,7 +49,45 @@ img
 	padding: 20px 5px
 	text-align: center
 
+#userName-error
+	position: absolute
+	top: 35px
+	left: 120px
+	color: red
+#telNumber-error, #phoneNumber-error
+	position: absolute
+	top: 103px
+	left: 110px
+	color: red
 
+.btnScroll 
+  position: fixed
+  background-color: rgba(0, 0, 0, .5)
+  width: 40px
+  height: 40px
+  text-align: center
+  line-height: 40px
+  color: white
+  border-radius: 4px  
+		&:hover
+     	cursor: pointer
+.btnNext 
+ 	bottom: 20px
+  right: 20px
+.noselect 
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.btnPrev 
+  bottom: 70px
+  right: 20px
+ 
+
+ 
+	
 
 
 @media (max-width: 1200px)
@@ -75,7 +113,10 @@ img
 		top: -80px
 		font-size: 25px
 		left: -25px
-    
+	.btnScroll
+		display: none
+   
+  
 
 			
 @media (max-width: 767px)
@@ -86,3 +127,7 @@ img
 @media (max-width: 576px)
 	.container
 		max-width: 300px	
+	#userName-error
+		left: 80px
+	#telNumber-error, #phoneNumber
+		left: 70px
